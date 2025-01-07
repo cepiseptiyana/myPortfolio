@@ -1,0 +1,179 @@
+@font-face {
+  font-family: bios;
+  src: url("../fonts/Ac437_IBM_Model3x_Alt2.ttf");
+}
+
+.content4 {
+  background-color: rgb(49, 49, 49);
+}
+
+.content4 .container .row:nth-child(1) {
+  background-color: rgb(11, 63, 63);
+}
+
+.content4 .container .row:nth-child(1) h1 {
+  color: aquamarine;
+  text-align: center;
+  font-size: 100px;
+  font-family: bios;
+}
+
+/* ROW 2 */
+
+.content4 .container .row:nth-child(2) h1 {
+  background-color: white;
+  font-family: bios;
+}
+
+/* ROW 3 */
+
+.content4 .container .row:nth-child(3) {
+  background-color: rgb(52, 52, 52);
+}
+
+.content4 .container .row:nth-child(3) .col-lg:nth-child(1) {
+  border-right: 3px solid white;
+  padding-top: 15px;
+}
+
+.content4 .container .row:nth-child(3) .col-lg form input {
+  color: rgb(11, 150, 29);
+  background-color: rgb(28, 28, 28);
+  font-family: bios;
+  font-size: 18px;
+  letter-spacing: 3px;
+  width: 35%;
+  margin-bottom: 22px;
+}
+
+.content4 .container .row:nth-child(3) .col-lg form input:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.content4 .container .row:nth-child(3) .col-lg form button {
+  color: rgb(235, 235, 235);
+  background-color: rgb(28, 28, 28);
+  font-family: bios;
+  font-size: 19px;
+  padding: 2px 20px 2px;
+}
+
+.content4 .container .row:nth-child(3) .col-lg form button:hover {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  bottom: 3px;
+}
+
+/* ROW 3 COL 2 */
+
+.content4 .container .row:nth-child(3) .col-lg:nth-child(2) {
+  padding-top: 15px;
+}
+
+.content4 .container .row:nth-child(3) .col-lg:nth-child(2) .row {
+  display: flex;
+  background-color: unset;
+  font-family: bios;
+  font-size: 25px;
+}
+
+.content4 .container .row:nth-child(3) .col-lg:nth-child(2) .row a img {
+  width: 40px;
+}
+
+.content4 .container .row:nth-child(3) .col-lg:nth-child(2) .row a {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.content4 .container .row:nth-child(3) .col-lg:nth-child(2) .row a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* BARIS 1 */
+  .content4 .container .row:nth-child(1) h1 {
+    font-size: 3rem;
+  }
+
+  /* BARIS 2 */
+  .content4 .container .row:nth-child(2) h1 {
+    background-color: white;
+    font-family: bios;
+    font-size: 2rem;
+  }
+
+  /* BARIS 3 */
+  /* INPUT */
+  .content4 .container .row:nth-child(3) .col-lg form input {
+    color: rgb(11, 150, 29);
+    font-family: bios;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    width: 50%;
+    margin-bottom: 22px;
+  }
+
+  /* ROW 3 COL 1 */
+  /* BUTTON */
+  .content4 .container .row:nth-child(3) .col-lg form button {
+    font-family: bios;
+    font-size: 1.5rem;
+    padding: 0 30px 0;
+  }
+
+  /* ROW 3 COL 2 */
+  .content4 .container .row:nth-child(3) .col-lg:nth-child(2) .row {
+    display: flex;
+    background-color: unset;
+    font-family: bios;
+    font-size: 1.1rem;
+  }
+}
+
+/* ! IPAD */
+@media only screen and (max-width: 768px) {
+  /* BARIS 1 */
+  .content4 .container .row:nth-child(1) h1 {
+    font-size: 2.5rem;
+  }
+
+  /* BARIS 2 */
+  .content4 .container .row:nth-child(2) h1 {
+    background-color: white;
+    font-family: bios;
+    font-size: 1.2rem;
+  }
+
+  /* BARIS 3 */
+  /* INPUT */
+  .content4 .container .row:nth-child(3) .col-lg form input {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  /* BUTTON */
+  .content4 .container .row:nth-child(3) .col-lg form button {
+    font-family: bios;
+    font-size: 1rem;
+    padding: 0 30px 0;
+  }
+
+  /* ROW 3 COL 2 */
+  .content4 .container .row:nth-child(3) .col-lg:nth-child(2) .row {
+    display: flex;
+    background-color: unset;
+    font-family: bios;
+    font-size: 1rem;
+  }
+}
+
+/* ! IPAD */
+@media only screen and (max-width: 500px) {
+  /* BARIS 3 */
+  /* INPUT */
+  .content4 .container .row:nth-child(3) .col-lg form input {
+    font-size: 14px;
+    width: 80%;
+  }
+}

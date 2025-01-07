@@ -1,0 +1,234 @@
+@font-face {
+  font-family: bios;
+  src: url("../fonts/Ac437_IBM_Model3x_Alt2.ttf");
+}
+
+.content2 {
+  background-color: rgb(49, 49, 49);
+  border-top: 3px solid white;
+}
+
+.content2 .container {
+  background-color: black;
+}
+
+/* ROW 1 */
+.content2 .container .row:nth-child(1) {
+  padding: 50px;
+}
+
+.content2 .container .row:nth-child(1) .col {
+  text-align: center;
+  background-color: rgb(11, 63, 63);
+  color: aquamarine;
+  font-size: 3.5rem;
+  font-family: bios;
+  margin-bottom: 130px;
+}
+
+/* ROW 2 */
+
+.content2 .container .row:nth-child(2) {
+  background-color: #202020;
+  text-align: center;
+}
+
+/* ! CARD */
+
+.content2 .container .row:nth-child(2) .col-lg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content2 .container .row:nth-child(2) .col-lg:nth-child(1) {
+  border-right: 3px solid black;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .card {
+  width: 70%;
+  position: relative;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: rgb(49, 49, 49);
+  color: aquamarine;
+  font-family: bios;
+  font-size: 22px;
+  position: absolute;
+  letter-spacing: 1px;
+  top: -21%;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .card h5 {
+  text-align: start;
+  padding-left: 5px;
+  border: 2px solid white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .card p,
+.content2 .container .row:nth-child(2) .col-lg .card a {
+  font-size: 18px;
+  text-align: start;
+  padding-left: 5px;
+  border: 2px solid white;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .card a {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  padding: 2px 20px 2px;
+  border-radius: 0;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .card a:hover {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  bottom: 3px;
+}
+
+/* TEXT 1 & 2 */
+
+.content2 .container .row:nth-child(2) .col-lg .container-text {
+  width: 90%;
+  padding-top: 60%;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .text1 h1 {
+  font-size: 2.5rem;
+}
+
+.content2 .container .row:nth-child(2) .col-lg .text1,
+.content2 .container .row:nth-child(2) .col-lg .text2 h4,
+.content2 .container .row:nth-child(2) .col-lg .text2 h6 {
+  color: aquamarine;
+  padding-left: 10px;
+  text-align: start;
+  font-family: bios;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* CARD */
+  .content2 .container .row:nth-child(2) .col-lg .card {
+    top: -15%;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .card p,
+  .content2 .container .row:nth-child(2) .col-lg .card a {
+    font-size: 1rem;
+  }
+
+  /*  */
+  /*  */
+  .content2 .container .row:nth-child(2) .col-lg:nth-child(1) {
+    margin-bottom: 80px;
+  }
+
+  /* TEXT */
+
+  .content2 .container .row:nth-child(2) .col-lg .container-text {
+    padding-top: 70%;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .text1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .text1,
+  .content2 .container .row:nth-child(2) .col-lg .text2 h4,
+  .content2 .container .row:nth-child(2) .col-lg .text2 h6 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ! IPAD */
+@media only screen and (max-width: 768px) {
+  /* ROW 1 */
+
+  .content2 .container .row:nth-child(1) .col {
+    margin-bottom: 0;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(11, 63, 63);
+    color: aquamarine;
+    font-size: 2.5rem;
+    font-family: bios;
+  }
+
+  /* ROW 2 */
+  /* CARD */
+
+  .content2 .container .row:nth-child(2) .col-lg .card {
+    top: -8%;
+    width: 85%;
+    padding: 5px;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .card p,
+  .content2 .container .row:nth-child(2) .col-lg .card a {
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 5px;
+    border: 2px solid white;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .card a {
+    padding: 2px 20px 2px;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .card h5 {
+    text-align: start;
+    padding-left: 5px;
+    border: 2px solid white;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* TEXT */
+
+  /* TEXT */
+
+  .content2 .container .row:nth-child(2) .col-lg .container-text {
+    padding-top: 70%;
+    padding-bottom: 5%;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .text1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .text1,
+  .content2 .container .row:nth-child(2) .col-lg .text2 h4,
+  .content2 .container .row:nth-child(2) .col-lg .text2 h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ! MOBILE */
+@media only screen and (max-width: 500px) {
+  /* CARD */
+  .content2 .container .row:nth-child(2) .col-lg .card p,
+  .content2 .container .row:nth-child(2) .col-lg .card a {
+    font-size: 14px;
+  }
+
+  /* TEXT */
+
+  .content2 .container .row:nth-child(2) .col-lg .container-text {
+    padding-top: 130%;
+    padding-bottom: 5%;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .text1 h1 {
+    font-size: 1.3rem;
+  }
+
+  .content2 .container .row:nth-child(2) .col-lg .text1,
+  .content2 .container .row:nth-child(2) .col-lg .text2 h4,
+  .content2 .container .row:nth-child(2) .col-lg .text2 h6 {
+    font-size: 14.5px;
+  }
+}
