@@ -53,7 +53,7 @@ function form(event) {
     let filterKataKasar = filter.clean(message._value);
 
     // PUSH KE WHATSAPP
-    const nohp = "6285659519463";
+    const nohpCepi = "6285659519463";
     let encodeMessage = encodeURIComponent(
       `username : ${username._value} \n
 email : ${email._value} \n
@@ -61,9 +61,19 @@ message : ${filterKataKasar}
 `
     );
 
-    let link = `https://web.whatsapp.com/send?phone=${nohp}&text=${encodeMessage}`;
+    let link;
+    // Check if user is on a mobile device
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      link = `whatsapp://send?phone=${nohpCepi}&text=${encodeMessage}`;
+    } else {
+      // Desktop device
+      link = `https://web.whatsapp.com/send?phone=${nohpCepi}&text=${encodeMessage}`;
+    }
     window.open(link, "_blank");
-    console.log(encodeMessage);
   } else {
     alert("silahkan isi username");
   }
