@@ -61,19 +61,23 @@ message : ${filterKataKasar}
 `
     );
 
-    let link;
-    // Check if user is on a mobile device
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      link = `whatsapp://send?phone=${nohpCepi}&text=${encodeMessage}`;
-    } else {
-      // Desktop device
-      link = `https://web.whatsapp.com/send?phone=${nohpCepi}&text=${encodeMessage}`;
-    }
-    window.open(link, "_blank");
+    window.open(
+      `https://wa.me/6285859519463?text=${encodeURIComponent(encodeMessage)}`
+    );
+
+    // let link;
+    // // Check if user is on a mobile device
+    // if (
+    //   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    //     navigator.userAgent
+    //   )
+    // ) {
+    //   link = `whatsapp://send?phone=${nohpCepi}&text=${encodeMessage}`;
+    // } else {
+    //   // Desktop device
+    //   link = `https://web.whatsapp.com/send?phone=${nohpCepi}&text=${encodeMessage}`;
+    // }
+    // window.open(link, "_blank");
   } else {
     alert("silahkan isi username");
   }
