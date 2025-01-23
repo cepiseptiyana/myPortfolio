@@ -25,7 +25,7 @@
                 > Website Dokumentasi Senam Di Wilayah KAB.Tangerang KEC.Kresek.
               </p>
               <a
-                href="https://portofolio-yuns-parallax.vercel.app/homepage.html"
+                href="https://cepiseptiyana.github.io/portofolioYunsParallax/"
                 class="btn btn-primary"
                 >Go To Web</a
               >
@@ -63,7 +63,7 @@
                 Konsep Dinamis.
               </p>
               <a
-                href="https://cepiseptiyana.github.io/Pangcuyy/"
+                href="https://cepiseptiyana.github.io/Pangcuy/"
                 class="btn btn-primary"
                 >Go To Web</a
               >
